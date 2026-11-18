@@ -93,7 +93,7 @@ export default function Page() {
 
       <section className="about-section" id="about" aria-labelledby="about-title"><div className="wrap about-layout"><div className="section-kicker"><span>04</span><span>ABOUT THIS NOTEBOOK</span></div><div className="about-copy"><h2 id="about-title">Learning to look<br />a little <em>closer.</em></h2><p>Evidence First is a project by <strong>Shivraj Sonwane</strong>, created for a Handshake learning mission. It documents AI-assisted learning practice: reading outputs, making a reasoned comparison, and being honest about the limits.</p><p>This is not a certification, a benchmark, or paid employment. It is one small exercise in evidence-first evaluation.</p><div className="about-stamp"><span>MADE FOR LEARNING</span><span>NOT A BENCHMARK</span></div></div></div></section>
 
-      <footer className="footer wrap"><a className="wordmark footer-wordmark" href="#top"><span className="mark">E</span><span>Evidence <strong>First</strong></span></a><p>Built for learning. Claims grounded in the source.</p><a className="back-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
+      <footer className="footer wrap"><a className="wordmark footer-wordmark" href="#top"><span className="mark">E</span><span>Evidence <strong>First</strong></span></a><p>Built for learning. Claims grounded in the source.</p><a className="footer-source" href="https://github.com/shivrajks/evidence-first-project-website" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a><a className="back-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
       </main>
     </>
   )

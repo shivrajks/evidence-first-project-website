@@ -135,6 +135,9 @@ h2 { margin: 0; font-size: clamp(36px, 4vw, 48px); line-height: 1.2; }
 .footer-wordmark { font-size: 13px; }
 .footer-wordmark .mark { width: 24px; height: 24px; font-size: 13px; }
 .footer p { margin: 0; color: #72819a; font-size: 12px; }
+.footer-source { color: #536782; font-size: 12px; text-decoration: none; }
+.footer-source span { color: var(--blue); }
+.footer-source:hover { color: var(--blue); }
 .back-top { color: #6c7d96; font-size: 8px; text-decoration: none; }
 .back-top span { margin-left: 7px; color: var(--blue); font-size: 12px; }
 @media (max-width: 800px) {
