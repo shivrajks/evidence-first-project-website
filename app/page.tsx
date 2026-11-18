@@ -18,7 +18,9 @@ export default function Page() {
   }
 
   return (
-    <main>
+    <>
+      <a className="skip-link" href="#main-content">Skip to main content</a>
+      <main id="main-content" tabIndex={-1}>
       <header className="topbar">
         <a className="wordmark" href="#top" aria-label="Evidence First home"><span className="mark">E</span><span>Evidence <strong>First</strong></span></a>
         <nav aria-label="Main navigation"><a href="#case-study">Case study</a><a href="#method">Method</a><a href="#about">About</a></nav>
@@ -30,6 +32,7 @@ export default function Page() {
           <p className="eyebrow"><span className="eyebrow-line" /> AN AI-ASSISTED EVALUATION NOTEBOOK</p>
           <h1 id="hero-title">A better answer<br />needs better <em>evidence.</em></h1>
           <p className="hero-subtitle">A small study in looking closely, making a case, and knowing what a case can&apos;t tell you.</p>
+          <p className="hero-byline">By Shivraj Sonwane <span aria-hidden="true">·</span> AI-assisted learning project</p>
           <a href="#case-study" className="text-link">Explore the case study <span aria-hidden="true">↘</span></a>
         </div>
         <aside className="prompt-note" aria-label="The prompt">
@@ -61,6 +64,7 @@ export default function Page() {
           <div className="verdict"><span className="verdict-label">THE READING</span><p>For this exercise, <strong>we prefer B.</strong> The reasoning is visible in the lines, not in a score.</p><span className="verdict-mark" aria-hidden="true">↗</span></div>
           <div className="improvement"><span className="improvement-icon" aria-hidden="true">↳</span><p><strong>A possible revision for A</strong><br />Shorten its second line and choose clearer rhymes for its third and fourth.</p></div>
           <a className="source-link" href="https://progress.openai.com/?prompt=2" target="_blank" rel="noreferrer">Read the original responses <span aria-hidden="true">↗</span></a>
+          <p className="source-note">Source: OpenAI Progress · Reviewed November 17, 2026. This is a comparison of two responses, not a benchmark.</p>
         </div>
       </section>
 
@@ -90,6 +94,7 @@ export default function Page() {
       <section className="about-section" id="about" aria-labelledby="about-title"><div className="wrap about-layout"><div className="section-kicker"><span>04</span><span>ABOUT THIS NOTEBOOK</span></div><div className="about-copy"><h2 id="about-title">Learning to look<br />a little <em>closer.</em></h2><p>Evidence First is a project by <strong>Shivraj Sonwane</strong>, created for a Handshake learning mission. It documents AI-assisted learning practice: reading outputs, making a reasoned comparison, and being honest about the limits.</p><p>This is not a certification, a benchmark, or paid employment. It is one small exercise in evidence-first evaluation.</p><div className="about-stamp"><span>MADE FOR LEARNING</span><span>NOT A BENCHMARK</span></div></div></div></section>
 
       <footer className="footer wrap"><a className="wordmark footer-wordmark" href="#top"><span className="mark">E</span><span>Evidence <strong>First</strong></span></a><p>Built for learning. Claims grounded in the source.</p><a className="back-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
-    </main>
+      </main>
+    </>
   )
 }

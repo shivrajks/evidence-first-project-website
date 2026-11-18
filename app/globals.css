@@ -16,7 +16,9 @@
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 body { margin: 0; background: var(--background); color: var(--navy); font-family: var(--body); font-size: 16px; -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
-a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid #2455d6; outline-offset: 4px; border-radius: 2px; }
+a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible, main:focus-visible { outline: 3px solid #2455d6; outline-offset: 4px; border-radius: 2px; }
+.skip-link { position: fixed; top: 10px; left: 10px; z-index: 10; transform: translateY(-160%); padding: 10px 14px; background: var(--navy); color: white; font-size: 14px; font-weight: 600; text-decoration: none; }
+.skip-link:focus { transform: translateY(0); }
 .wrap { width: min(1120px, calc(100% - 80px)); margin-inline: auto; }
 .topbar { height: 76px; padding: 0 max(40px, calc((100% - 1280px)/2)); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(22,43,77,.1); }
 .wordmark { text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 15px; font-weight: 500; letter-spacing: -.04em; white-space: nowrap; }
@@ -34,7 +36,9 @@ a:focus-visible, button:focus-visible, [tabindex="0"]:focus-visible { outline: 3
 h1, h2 { font-family: var(--display); font-weight: 500; letter-spacing: -.065em; }
 h1 { margin: 0; font-size: clamp(43px, 5vw, 66px); line-height: 1.13; }
 h1 em, h2 em { color: var(--blue); font-style: normal; }
-.hero-subtitle { max-width: 450px; margin: 22px 0 24px; color: #536884; font-size: 18px; line-height: 1.55; }
+.hero-subtitle { max-width: 450px; margin: 22px 0 10px; color: #536884; font-size: 18px; line-height: 1.55; }
+.hero-byline { margin: 0 0 22px; color: #536884; font-size: 13px; line-height: 1.45; }
+.hero-byline span { padding-inline: 3px; color: var(--blue); }
 .text-link { color: var(--navy); font-size: 14px; font-weight: 700; text-decoration: none; border-bottom: 1px solid #9aaac0; padding-bottom: 4px; transition: color .2s; }
 .text-link span { margin-left: 8px; color: var(--blue); }
 .prompt-note { min-height: 302px; position: relative; padding: 24px 30px 22px; background: var(--lavender); border: 1px solid rgba(22,43,77,.1); box-shadow: 10px 10px 0 rgba(36,85,214,.06); transform: rotate(1deg); }
@@ -77,6 +81,7 @@ h2 { margin: 0; font-size: clamp(36px, 4vw, 48px); line-height: 1.2; }
 .improvement strong { color: var(--navy); font-weight: 600; }
 .source-link { display: inline-flex; gap: 7px; margin-top: 22px; font-size: 13px; font-weight: 700; text-decoration: none; color: var(--navy); border-bottom: 1px solid #9aaac0; padding-bottom: 4px; transition: color .2s; }
 .source-link span { color: var(--blue); }
+.source-note { max-width: 700px; margin: 10px 0 0; color: #64758d; font-size: 12px; line-height: 1.55; }
 .inspect-section { padding: 95px 0 100px; background: var(--background); }
 .inspect-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 88px; align-items: center; }
 .inspect-intro h2 { margin-top: 29px; }
